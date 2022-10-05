@@ -1,0 +1,342 @@
+/* -----------------------------------General CSS */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    background: rgb(251, 63, 76);
+    background: radial-gradient(circle, rgba(251, 63, 76, 1) 11%, rgba(70, 101, 252, 1) 100%);
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+input {
+    margin-left: 20px;
+}
+
+p {
+    font-weight: 680;
+    font-size: 20px;
+}
+
+/* --------------------------------End-Of General CSS */
+
+
+
+
+
+/* -----------------------------------RandomRecipe.html */
+
+/* -----------------------------------header and navigation bar */
+#navbar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    height: 70px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar button {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Dancing Script';
+}
+/* --------------------------------End-Of header/navigation bar */
+
+
+.userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* -----------------------------------customization for the dropDowns (select tags)  */
+.box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 450px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 50px;
+}
+
+.box::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+/* --------------------------------End-Of customization for the dropDowns (select tags)  */
+
+
+/* -----------------------------------Diets (first dropDown (select) */
+#diets {
+    margin-bottom: 10px;
+}
+
+
+/* -----------------------------------Adding ingridients section */
+.textinput {
+    margin-right: 20px;
+}
+
+#ingridient {
+    width: 250px;
+    height: 50px;
+    background-color: #0563af;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.clearIngridients,
+.addIngridient {
+    width: 90px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #0563af;
+    height: 50px;
+    font-size: 20px;
+}
+
+#ingidientList {
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --------------------------------End-Of Adding ingridients section */
+
+
+.recipe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+
+/* -----------------------------------image in the recipe */
+.image {
+    text-align: center;
+}
+
+
+
+#findRecipeButton {
+    margin-top: 20px;
+}
+
+.findRecipeButton {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 1px;
+    margin-bottom: 20px;
+    border: 1px solid #0563af;
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+.findRecipeButton:hover {
+    background-color: #0563af;
+    color: white;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    height: 30px;
+    padding-top: 7px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* -----------------------------------Buttons in the recipe output */
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.goBack{
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    border: 1px solid #0563af;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.goBack:hover,
+.clearIngridients:hover,
+.addIngridient:hover {
+    background-color: #0563af;
+    color: white;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+/* --------------------------------End-Of RandomRecipe.html */
+
+
+
+
+
+/* -----------------------------------landingPage.html */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+#landingPage {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+#landingPage h1 {
+    font-family: 'Dancing Script';
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#landingPage button {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    width: 500px;
+    height: 70px;
+    font-size: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#landingPage button:hover {
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 8);
+    width: 550px;
+    height: 80px;
+    margin-bottom: 140px;
+}
+/* --------------------------------End-Of landingPage.html */
+
+
+
+@media screen and (max-width: 700px) {
+
+    .recipe,
+    .userInput,
+    .buttons,
+    .box select,
+    .findRecipeButton{
+        width: 85%;
+    }
+
+    .addIngridient{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    .goBack {
+        width: 90%;
+    }
+
+    .image,
+    img {
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        display: none;
+    }
+}
